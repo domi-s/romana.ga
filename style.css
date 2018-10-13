@@ -1,0 +1,94 @@
+titlu {
+	font-size: 25px; font-family: '';
+}
+
+subtitlu {
+	font-size: 21px; font-family: '';
+}
+
+a, a:visited, a:active {
+	color: #4286f4;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline!important;
+}
+
+dot::before {
+	content: "- ";
+	display: initial;
+}
+
+#top a {
+	color: gray;
+}
+
+#top titlu a {
+	color: #f4424b; font-family: ''; text-decoration: none!important;
+}
+
+#top {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	background: #fff; color: #f4424b;
+	border-bottom: 1px solid #ededed;
+	padding: 15px;
+	z-index: 999;
+	transition: .2s linear;
+}
+
+#top:hover {
+	opacity: 1;
+}
+
+#top titlu {
+	user-select: none;
+	cursor: pointer;
+}
+
+bsubc {
+	display: none;
+	position: fixed;
+	top: 20px; right: 20px;
+	color: gray;
+}
+
+subc {
+	margin-left: 10px;
+	color: gray;
+	cursor: pointer;
+}
+
+.subc {
+	border-left: 1px solid gray;
+	padding-left: 10px;
+}
+
+.subd {
+	margin-left: 25px;
+}
+
+@media screen and (max-width: 500px) {
+	#top titlu {
+		display: block;
+	}
+
+	asubc {
+		display: none;
+	}
+
+	bsubc {
+		display: initial;
+	}
+
+	.subc {
+		display: block;
+		border-left: 0px solid;
+	}
+
+	.subd {
+		margin-left: 20px;
+	}
+}
